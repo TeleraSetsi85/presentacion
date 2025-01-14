@@ -1,4 +1,3 @@
-
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -9,9 +8,35 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
 import { Container } from '@mui/material';
 
+
 function NavBar(){
     const theme = useTheme(); // Para que funcione el materiaUI
     const isMobile = useMediaQuery(theme.breakpoints.down('sm')); //Detecta si la pantalla es pequeña
+
+    const btnHome = ()=>{
+        //Comprueba si el elemento existe para no dar error en ejecucion, esto pasa solo en typescript
+        const section = document.getElementById('section1');
+        if(section){
+            section.scrollIntoView({behavior: 'smooth'});
+        }else{
+            return null;
+        }
+    }
+
+
+    //Los 2 siguientes botones falta crearlos en el main.tsx para que se scrollie
+    const btnAbout = ()=>{
+        const section2 = document.getElementById('');
+        if(section2){
+            section2.scrollIntoView({behavior: 'smooth'});
+        }else{
+            return null;
+        }
+    }
+
+    const btnContact = ()=>{
+        {/*Agregar modal de contacto*/}
+    }
 
     return(
         <Container style={{overflow: 'hidden'}}>
@@ -31,9 +56,9 @@ function NavBar(){
                 {/*Solo se muestra si es en Pantallas grandes */}
                 {!isMobile && (
                     <>
-                        <Button color="inherit">Inicio</Button>
-                        <Button color="inherit">Acerca de</Button>
-                        <Button color="inherit">Contactanos</Button>
+                        <Button color="inherit" onClick={btnHome}>Inicio</Button>
+                        <Button color="inherit" onClick={btnAbout}>Acerca de</Button>
+                        <Button color="inherit" onClick={btnContact}>Contactanos</Button>
                     </>
                 )}
                 </Toolbar>

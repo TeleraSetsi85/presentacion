@@ -1,12 +1,11 @@
-import { AppBar } from "@mui/material";
 
 
 function Main(){
     return(
         <div>
-            <AppBar>
+            <div id="section1">
                 
-            </AppBar>
+            </div>
         </div>
     );
 }
