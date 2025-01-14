@@ -1,11 +1,12 @@
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
+import { useState } from 'react';
+import { Dialog, DialogActions, DialogContent, DialogTitle, Button } from '@mui/material';
 
 
 function NavBar(){
@@ -33,13 +34,20 @@ function NavBar(){
         }
     }
 
-    const btnContact = ()=>{
-        {/*Agregar modal de contacto*/}
-    }
+
+        const [open, setOpen] = useState(false);
+
+        const handleClickOpen = () => {
+            setOpen(true);
+        };
+
+        const handleClose = () => {
+            setOpen(false);
+        };
 
     
     return(
-        
+        <>
             <AppBar position="fixed" sx={{background: '#28282B', borderRadius: '8px', margin: '10px 8px', minHeight: '48px', 
                 width: '60%',  
                 left: '50%',
@@ -62,12 +70,34 @@ function NavBar(){
                     <>
                         <Button color="inherit" onClick={btnHome}>Inicio</Button>
                         <Button color="inherit" onClick={btnAbout}>Acerca de</Button>
-                        <Button color="inherit" onClick={btnContact}>Contactanos</Button>
+                        <Button color="inherit" onClick={handleClickOpen}>Contactanos</Button>
                     </>
                 )}
                 </Toolbar>
             </AppBar>
         
+        <div>
+
+        <Dialog open={open} onClose={handleClose}>
+            <DialogTitle sx={{
+                display: 'grid',
+                placeItems: 'center',
+                fontSize: '2rem'
+            }}>
+                Forma de contactar
+            </DialogTitle>
+            <DialogContent>
+                <Typography variant='h4'>Numero de Telefono</Typography>
+                <Typography variant='h5'>312 193 1445</Typography>
+            </DialogContent>
+        <DialogActions>
+            <Button onClick={handleClose} color="primary">
+                Cerrar
+            </Button>
+        </DialogActions>
+        </Dialog>
+    </div>
+    </>
     );
 }
 
