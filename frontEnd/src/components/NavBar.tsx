@@ -6,7 +6,6 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useTheme } from '@mui/material/styles';
-import { Container } from '@mui/material';
 
 
 function NavBar(){
@@ -38,9 +37,14 @@ function NavBar(){
         {/*Agregar modal de contacto*/}
     }
 
+    
     return(
-        <Container style={{overflow: 'hidden'}}>
-            <AppBar position="static" sx={{background: '#28282B', borderRadius: '8px', margin: '10px 8px'}}>
+        
+            <AppBar position="fixed" sx={{background: '#28282B', borderRadius: '8px', margin: '10px 8px', minHeight: '48px', 
+                width: '60%',  
+                left: '50%',
+                transform: 'translateX(-50%)' 
+            }}>
                 <Toolbar>
                 {/* Icono del menu en el cel */}
                 {isMobile && (
@@ -63,7 +67,7 @@ function NavBar(){
                 )}
                 </Toolbar>
             </AppBar>
-        </Container>
+        
     );
 }
 
