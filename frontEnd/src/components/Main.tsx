@@ -1,6 +1,7 @@
 
 import {Box, Typography, Button, Card, CardContent} from '@mui/material';
-
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import './styles/Main.css';
 
 function Main(){
     
@@ -18,13 +19,15 @@ function Main(){
         <>
             {/*Primer box que se ofrece? */}
             <Box sx={{
-                border: 3,
+                border: 1,
                 padding: '10px 15px',
+                margin: '30px 30px 30px',
+                marginTop: '100px',
                 width: '30%',
                 height: '40rem',
                 background: '#28282B',
                 borderRadius: '8px',
-                boxShadow: 'inherit'
+                boxShadow: 3
             }}>
                 <Typography variant='h2' sx={{
                     color: '#7DF9FF',
@@ -36,18 +39,19 @@ function Main(){
                 </Typography>
                 <Typography sx={{
                     color: '#FFFF',
-                    fontSize: '25px'
+                    fontSize: '25px',
+                    
                 }}>
                     Nuestro equipo de desarrollo web maneja multiples herramientas tales como:
-                    <li>React.js</li>
-                    <li>MaterialUI</li>
-                    <li>Bootsrap</li>
-                    <li>JavaScript</li>
-                    <li>Node.js</li>
-                    <li>MySql</li>
-                    <li>Axios</li>
+                    <li className='list'>React.js ⚛️</li>
+                    <li className='list'>Material-UI 🎨</li>
+                    <li className='list'>Bootstrap 👢</li>
+                    <li className='list'>JavaScript 💻</li>
+                    <li className='list'>Node.js 🌐</li>
+                    <li className='list'>MySQL 🗄️</li>
+                    <li className='list'>Axios 🔗</li>
                 </Typography>
-                <Button variant='contained' onClick={btnViewWork} sx={{
+                <Button variant='contained' onClick={btnViewWork} endIcon={<AssignmentIndIcon />} sx={{
                     borderRadius: '200px'
                 }}>
                     Ver trabajos

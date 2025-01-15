@@ -7,7 +7,7 @@
 body{
     margin: 0;
     height: 100vh;
-    background: linear-gradient(120deg, #191919, #3b3b3b );
+    background: linear-gradient(120deg, #191919, #3b3b3b, #191919, #3b3b3b ); /*Mejorar el movimiento*/
     background-size: 300% 300%;
     animation: moveBackground 8s infinite;
     color: white;
