@@ -19,12 +19,13 @@ function Main(){
         <>
             {/*Primer box que se ofrece? */}
             <Box sx={{
+                display: 'grid',
                 border: 1,
                 padding: '10px 15px',
                 margin: '30px 30px 30px',
                 marginTop: '100px',
                 width: '30%',
-                height: '40rem',
+                height: '100%',
                 background: '#28282B',
                 borderRadius: '8px',
                 boxShadow: 3
@@ -37,12 +38,17 @@ function Main(){
                 }}>
                     ¿Que ofrecemos?
                 </Typography>
+
+                <Typography sx={{fontSize: '30px', color: '#ffff'}}>
+                    Nuestro equipo de desarrollo web maneja multiples herramientas tales como:
+                </Typography>
+
                 <Typography sx={{
                     color: '#FFFF',
                     fontSize: '25px',
                     
                 }}>
-                    Nuestro equipo de desarrollo web maneja multiples herramientas tales como:
+                    
                     <li className='list'>React.js ⚛️</li>
                     <li className='list'>Material-UI 🎨</li>
                     <li className='list'>Bootstrap 👢</li>
@@ -52,7 +58,8 @@ function Main(){
                     <li className='list'>Axios 🔗</li>
                 </Typography>
                 <Button variant='contained' onClick={btnViewWork} endIcon={<AssignmentIndIcon />} sx={{
-                    borderRadius: '200px'
+                    borderRadius: '200px',
+                    
                 }}>
                     Ver trabajos
                 </Button>
