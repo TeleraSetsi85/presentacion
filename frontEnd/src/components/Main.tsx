@@ -25,7 +25,7 @@ function Main(){
                 margin: '30px 30px 30px',
                 marginTop: '100px',
                 width: '30%',
-                height: '100%',
+                height: 'auto',
                 background: '#28282B',
                 borderRadius: '8px',
                 boxShadow: 3
@@ -90,19 +90,10 @@ function Main(){
 
                 {/*Trabajo 1 */}
                 <Card sx={{
-                        width: {
-                            xs: '90%',  
-                            sm: 400,     
-                            md: 500,     
-                        },
-                        height: {
-                            xs: 'auto',  
-                            sm: 500,     
-                            md: 600,     
-                        },
-                        padding: '15px',
-                        boxShadow: 3,
-                        border: 2
+                        maxWidth: 345, 
+                        borderRadius: 4, 
+                        boxShadow: 3, 
+                        overflow: 'hidden',
                     }}>
                     <CardContent>
                         <Typography variant='h5'>
@@ -121,19 +112,10 @@ function Main(){
 
                 {/*2do Trabajo */}
                 <Card sx={{
-                        width: {
-                            xs: '90%',  
-                            sm: 400,     
-                            md: 500,     
-                        },
-                        height: {
-                            xs: 'auto',  
-                            sm: 500,     
-                            md: 600,     
-                        },
-                        padding: '15px',
-                        boxShadow: 3,
-                        border: 2
+                        maxWidth: 345, 
+                        borderRadius: 4, 
+                        boxShadow: 3, 
+                        overflow: 'hidden',
                     }}>
                         <CardContent>
                             <Typography variant='h5'>
@@ -170,19 +152,10 @@ function Main(){
 
                 {/*3er trabajo */}
                 <Card sx={{
-                        width: {
-                            xs: '90%',  
-                            sm: 400,     
-                            md: 500,     
-                        },
-                        height: {
-                            xs: 'auto',  
-                            sm: 500,     
-                            md: 600,     
-                        },
-                        padding: '15px',
-                        boxShadow: 3,
-                        border: 2
+                        maxWidth: 345, 
+                        borderRadius: 4, 
+                        boxShadow: 3, 
+                        overflow: 'hidden',
                     }}>
 
                 </Card>

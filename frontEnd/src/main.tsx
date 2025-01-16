@@ -9,7 +9,7 @@ import App from './App.tsx'
 import { createTheme, CssBaseline, ThemeProvider } from '@mui/material';
 
 const theme = createTheme({
-  //Luego se busca un diseño
+  //Luego se busca un diseño, esto es solo para que tenga todo un tema, pero es opcional
 })
 
 createRoot(document.getElementById('root')!).render(
