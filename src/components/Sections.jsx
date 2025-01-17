@@ -43,18 +43,22 @@ export default function RecipeReviewCard() {
   };
 
   return (
+    <>
     <Card sx={{ width: "80%", backgroundColor: "#28282B", color: "white" }}>
       <CardContent>
         <Typography
           variant="h2"
           sx={{
-            color: "#7DF9FF",
+            color: "#5c1b6c",
             fontWeight: "bold",
             webkitTextStroke: "1px black",
-            textShadow: "1px 1px 1px #00ffff, 0 0 5px #00ffff",
+            textShadow: "1px 1px 1px #5c1b6c",
           }}
         >
-          Nosotros
+          ¿Que hacemos?
+        </Typography>
+        <Typography>
+          Somos un equipo de desarrollo web que buscamos mejorar las necesidades de nuestros clientes para facilitar su negocio, conferencia, eventos y mas
         </Typography>
         <Typography>Nuestro equipo de desarrollo web maneja multiples herramientas tales como:</Typography>
         <Typography
@@ -184,5 +188,16 @@ export default function RecipeReviewCard() {
         </CardContent>
       </Collapse>
     </Card>
+
+    <Box sx={{
+      display: "flex", justifyContent: "end", alignItems: "center", gap: "0.5rem"}}>
+      <Typography>
+        Caracteristicas
+      </Typography>
+      <Card>
+        
+      </Card>
+    </Box>
+    </>
   );
 }
