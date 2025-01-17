@@ -10,6 +10,10 @@ import Box from "@mui/material/Box";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CardActionArea from "@mui/material/CardActionArea";
 import CardMedia from "@mui/material/CardMedia";
+import CodeIcon from '@mui/icons-material/Code';
+import DnsIcon from '@mui/icons-material/Dns';
+import DesignServicesIcon from '@mui/icons-material/DesignServices';
+
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -189,13 +193,50 @@ export default function RecipeReviewCard() {
       </Collapse>
     </Card>
 
+    {/*La seccion de caracteristicas */}
     <Box sx={{
-      display: "flex", justifyContent: "end", alignItems: "center", gap: "0.5rem"}}>
-      <Typography>
-        Caracteristicas
-      </Typography>
-      <Card>
-        
+      display: "flex", justifyContent: "center", alignItems: "center"}}>
+      <Card sx={{background: "linear-gradient(45deg,rgb(134, 8, 252), #000b,rgb(22, 88, 255))", width: '30%',height: '20rem',  margin: '20px'}}>
+        <CardContent>
+        <CodeIcon sx={{color: "#1E90FF", fontSize: '50px'}}></CodeIcon>
+          <Typography gutterBottom variant="h4" component="div" sx={{color: '#FFFFFF'}}>
+            Desarrollo Front-End
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{color: '#FFFFFF'}}>
+          El desarrollo Front-End se basa en los colores, funciones, modelo etc.
+            Aborda la parte orientada al usuario de un sitio web.
+            Estas tecnologías incluyen lenguajes informáticos como JavaScript, CSS, HTML, React.js y MaterialUI
+          </Typography>
+        </CardContent>
+      </Card>
+
+
+      <Card sx={{background: "linear-gradient(45deg,rgb(134, 8, 252), #000b,rgb(22, 88, 255))", width: '30%',height: '20rem',  margin: '20px'}}>
+      <CardContent>
+        <DnsIcon sx={{color: "#1E90FF", fontSize: '50px'}}></DnsIcon>
+          <Typography gutterBottom variant="h4" component="div" sx={{color: '#FFFFFF'}}>
+            Desarrollo Back-End
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{color: '#FFFFFF'}}>
+          El desarrollo Back-End se basa en lo que los usuarios no pueden ver, o sea, el servidor, mantienen las operaciones del lado del servidor de una aplicación o pagina web.
+          Nuestros principales objetivos de desarrollo son crear una arquitectura fiable que realice las funciones de la aplicación de forma precisa y eficiente.
+          </Typography>
+        </CardContent>
+      </Card>
+
+
+      <Card sx={{background: "linear-gradient(45deg,rgb(134, 8, 252), #000b,rgb(22, 88, 255))", width: '30%',height: '20rem', margin: '20px'}}>
+      <CardContent>
+        <DesignServicesIcon sx={{color: "#1E90FF", fontSize: '50px'}}></DesignServicesIcon>
+          <Typography gutterBottom variant="h4" component="div" sx={{color: '#FFFFFF'}}>
+            Diseño Grafico
+          </Typography>
+          <Typography variant="body2" color="text.secondary" sx={{color: '#FFFFFF'}}>
+          Contamos con conocimientos sobre Diseño Grafico, principalmente sobre UX y UI.
+          Creamos para ustedes una interfaz de usuario intuitiva, diseñada para facilitar la interacción y maximizar la eficiencia, al igual que una experiencia atractiva
+          y memorable que conecta a los usuarios con su propósito de manera sencilla y efectiva. Nos enfocamos en combinar funcionalidad, diseño moderno y accesibilidad para garantizar que cada detalle cumpla con las expectativas de nuestros clientes
+          </Typography>
+        </CardContent>
       </Card>
     </Box>
     </>
