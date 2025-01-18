@@ -14,7 +14,6 @@ import CodeIcon from '@mui/icons-material/Code';
 import DnsIcon from '@mui/icons-material/Dns';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
 
-
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
   return <IconButton {...other} />;
@@ -107,7 +106,7 @@ export default function RecipeReviewCard() {
               paddingBottom: "1rem",
             }}
           >
-            <Card sx={{ minWidth: { xs: "100%", md: "calc(50% - 1rem)" }, backgroundColor: "gainsboro" }}>
+            <Card sx={{ minWidth: { xs: "100%", md: "calc(50% - 1rem)" }, backgroundColor: "gainsboro"}}>
               <CardActionArea>
                 <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
                 <CardContent>
@@ -195,7 +194,7 @@ export default function RecipeReviewCard() {
 
     {/*La seccion de caracteristicas */}
     <Box sx={{
-      display: "flex", justifyContent: "center", alignItems: "center"}}>
+      display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: 2, padding: 2}}>
       <Card sx={{background: "linear-gradient(45deg,rgb(134, 8, 252), #000b,rgb(22, 88, 255))", width: '30%',height: '20rem',  margin: '20px'}}>
         <CardContent>
         <CodeIcon sx={{color: "#1E90FF", fontSize: '50px'}}></CodeIcon>
