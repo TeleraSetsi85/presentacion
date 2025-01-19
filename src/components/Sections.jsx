@@ -13,7 +13,7 @@ import CardMedia from "@mui/material/CardMedia";
 import CodeIcon from '@mui/icons-material/Code';
 import DnsIcon from '@mui/icons-material/Dns';
 import DesignServicesIcon from '@mui/icons-material/DesignServices';
-
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -236,6 +236,51 @@ export default function RecipeReviewCard() {
           Creamos para ustedes una interfaz de usuario intuitiva, diseñada para facilitar la interacción y maximizar la eficiencia, al igual que una experiencia atractiva
           y memorable que conecta a los usuarios con su propósito de manera sencilla y efectiva. Nos enfocamos en combinar funcionalidad, diseño moderno y accesibilidad para garantizar que cada detalle cumpla con las expectativas de nuestros clientes
           </Typography>
+        </CardContent>
+      </Card>
+    </Box>
+
+    <Box sx={{background: 'brown'}}>
+      <Typography variant="h2">
+          Nuestro equipo
+      </Typography>
+
+      <Card sx={{width: '100%',height: '20rem', margin: '20px'}}>
+        <CardContent>
+          <Typography>Desarrolladores Front-End</Typography>
+          <CardMedia component="img" height="200" image="gojo pfp.jpg" alt="Pfp" />
+          <Typography>Diego Arellano</Typography>
+          <GitHubIcon></GitHubIcon>
+
+          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+          <Typography>Ricardo Anguiano</Typography>
+          <GitHubIcon></GitHubIcon>
+
+          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+          <Typography>Alberto</Typography>
+          <GitHubIcon></GitHubIcon>
+
+          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+          <Typography>Fernando Aviña</Typography>
+          <GitHubIcon></GitHubIcon>
+        </CardContent>
+      </Card>
+
+      <Card>
+        <CardContent>
+          <Typography>Desarrolladores Back-End</Typography>
+
+          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+          <Typography>Ricardo Anguiano</Typography>
+          <GitHubIcon></GitHubIcon>
+
+          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+          <Typography>Alberto</Typography>
+          <GitHubIcon></GitHubIcon>
+
+          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+          <Typography>Fernando Aviña</Typography>
+          <GitHubIcon></GitHubIcon>
         </CardContent>
       </Card>
     </Box>
