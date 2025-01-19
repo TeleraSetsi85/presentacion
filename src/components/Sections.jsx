@@ -242,33 +242,66 @@ export default function RecipeReviewCard() {
       </Card>
     </Box>
 
-    <Box sx={{background: 'brown'}}>
+      {/*Seccion de equipo */}
+    <Box sx={{background: 'brown', width: '80%', height: '60rem',padding: '10px 15px'}}>
       <Typography variant="h2">
           Nuestro equipo
       </Typography>
+      
+      <Box sx={{display: 'flex', justifyContent: 'end', alignItems: 'center'}}>
 
-      <Card sx={{width: '100%',height: '20rem', margin: '20px'}}>
-        <CardContent>
-          <Typography>Desarrolladores Front-End</Typography>
-          <CardMedia component="img" height="200" image="gojo pfp.jpg" alt="Pfp" />
-          <Typography>Diego Arellano</Typography>
-          <GitHubIcon></GitHubIcon>
+      <Card sx={{display: 'flex', justifyContent: 'end', alignItems: 'center', width: '60%',height: '50rem', margin: '20px'}}>
 
-          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
-          <Typography>Ricardo Anguiano</Typography>
-          <GitHubIcon></GitHubIcon>
+      <Typography>Desarrolladores Front-End</Typography>
 
-          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
-          <Typography>Alberto</Typography>
-          <GitHubIcon></GitHubIcon>
+      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "2rem", borderRadius: '20px', boxShadow: 3}}>
+        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
 
-          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
-          <Typography>Fernando Aviña</Typography>
-          <GitHubIcon></GitHubIcon>
+          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
+          <Typography sx={{textAlign: "center",marginTop: 2}}>
+            Diego Arellano
+          </Typography>
+          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
         </CardContent>
       </Card>
 
-      <Card>
+      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "2rem", borderRadius: '20px', boxShadow: 3}}>
+        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
+
+          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
+          <Typography sx={{textAlign: "center",marginTop: 2}}>
+            Diego Arellano
+          </Typography>
+          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
+        </CardContent>
+      </Card>
+
+      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "0.5rem", borderRadius: '20px', boxShadow: 3}}>
+        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
+
+          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
+          <Typography sx={{textAlign: "center",marginTop: 2}}>
+            Diego Arellano
+          </Typography>
+          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
+        </CardContent>
+      </Card>
+
+      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "0.5rem", borderRadius: '20px', boxShadow: 3}}>
+        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
+
+          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
+          <Typography sx={{textAlign: "center",marginTop: 2}}>
+            Diego Arellano
+          </Typography>
+          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
+        </CardContent>
+      </Card>
+
+      </Card>
+
+      {/*Seccion del backEnd */}
+      <Card sx={{width: '20%',height: '20rem', margin: '20px'}}>
         <CardContent>
           <Typography>Desarrolladores Back-End</Typography>
 
@@ -285,6 +318,7 @@ export default function RecipeReviewCard() {
           <GitHubIcon></GitHubIcon>
         </CardContent>
       </Card>
+      </Box>
     </Box>
     </>
   );
