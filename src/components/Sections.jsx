@@ -250,55 +250,91 @@ export default function RecipeReviewCard() {
       
       <Box sx={{display: 'flex', justifyContent: 'end', alignItems: 'center'}}>
 
-      <Card sx={{display: 'flex', justifyContent: 'end', alignItems: 'center', width: '60%',height: '50rem', margin: '20px'}}>
-
-      <Typography>Desarrolladores Front-End</Typography>
-
-      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "2rem", borderRadius: '20px', boxShadow: 3}}>
-        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
-
-          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
-          <Typography sx={{textAlign: "center",marginTop: 2}}>
-            Diego Arellano
-          </Typography>
-          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
+      <div
+      style={{
+        display: "grid", 
+        gridTemplateColumns: "repeat(2, 1fr)",
+        background: 'white',
+        borderRadius: '20px',
+        width: '50%',
+        gap: "1rem", 
+        justifyContent: "center",
+      }}>
+        <Typography>Desarrolladores Front-End</Typography>
+      <Card
+        sx={{
+          background: "linear-gradient(90deg,white, grey, white)",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
         </CardContent>
       </Card>
 
-      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "2rem", borderRadius: '20px', boxShadow: 3}}>
-        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
 
-          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
-          <Typography sx={{textAlign: "center",marginTop: 2}}>
-            Diego Arellano
-          </Typography>
-          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
+      <Card
+        sx={{
+          background: "linear-gradient(90deg,white, grey, white)",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+        }}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
         </CardContent>
       </Card>
 
-      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "0.5rem", borderRadius: '20px', boxShadow: 3}}>
-        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
-
-          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
-          <Typography sx={{textAlign: "center",marginTop: 2}}>
-            Diego Arellano
-          </Typography>
-          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
+      <Card
+        sx={{
+          background: "linear-gradient(90deg,white, grey, white)",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+        }}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
         </CardContent>
       </Card>
 
-      <Card sx={{background: "linear-gradient(90deg,white, grey, white)",width: 300, margin: "0.5rem", borderRadius: '20px', boxShadow: 3}}>
-        <CardContent sx={{display: "flex",flexDirection: "column", justifyContent: "center",alignItems: "center"}}>
-
-          <CardMedia sx={{width: '15rem',height: '15rem',borderRadius: '100%'}} component="img" height="200" image="gojo pfp.jpg" alt="Pfp"/>
-          <Typography sx={{textAlign: "center",marginTop: 2}}>
-            Diego Arellano
-          </Typography>
-          <GitHubIcon sx={{fontSize: "50px",marginTop: 2}}/>
+      <Card
+        sx={{
+          background: "linear-gradient(90deg,white, grey, white)",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+        }}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
         </CardContent>
       </Card>
-
-      </Card>
+    </div>
 
       {/*Seccion del backEnd */}
       <Card sx={{width: '20%',height: '20rem', margin: '20px'}}>
