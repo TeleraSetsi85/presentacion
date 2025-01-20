@@ -256,7 +256,7 @@ export default function RecipeReviewCard() {
     </Box>
 
       {/*Seccion de equipo */}
-    <Box sx={{background: '#000d', width: '80%', height: '90rem',padding: '10px 15px', borderRadius: '10px'}}>
+    <Box sx={{background: '#000d', width: '80%', height: '70rem',padding: '10px 15px', borderRadius: '10px', marginBottom: '100px'}}>
       <Typography variant="h2">
           Nuestro equipo
       </Typography>
