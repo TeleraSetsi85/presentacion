@@ -48,6 +48,22 @@ export default function RecipeReviewCard() {
     setExpanded(!expanded);
   };
 
+  //Funciones de las cards
+  const cardDA = ()=>{
+    window.location.href = 'https://github.com/TeleraSetsi85';
+  }
+
+  const cardRA = ()=>{
+    window.location.href = 'https://github.com/RAH-013';
+  }
+
+  const cardFA = ()=>{
+    window.location.href = 'https://github.com/Fer10K';
+  }
+
+  const cardAL = ()=>{
+    window.location.href = '';
+  }
   return (
     <>
     <Card sx={{ width: "80%", backgroundColor: "#28282B", color: "white" }}>
@@ -243,7 +259,7 @@ export default function RecipeReviewCard() {
     </Box>
 
       {/*Seccion de equipo */}
-    <Box sx={{background: 'brown', width: '80%', height: '60rem',padding: '10px 15px'}}>
+    <Box sx={{background: 'brown', width: '80%', height: '90rem',padding: '10px 15px', borderRadius: '10px'}}>
       <Typography variant="h2">
           Nuestro equipo
       </Typography>
@@ -256,14 +272,95 @@ export default function RecipeReviewCard() {
         gridTemplateColumns: "repeat(2, 1fr)",
         background: 'white',
         borderRadius: '20px',
-        width: '50%',
+        width: '40%',
         gap: "1rem", 
-        justifyContent: "center",
+        padding: '15px',
+        justifyContent: "center", 
+        alignItems: "center",     
+        justifyItems: "center",
       }}>
-        <Typography>Desarrolladores Front-End</Typography>
       <Card
         sx={{
-          background: "linear-gradient(90deg,white, grey, white)",
+          background: "white",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+        onClick={cardDA}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
+        </CardContent>
+      </Card>
+
+
+      <Card
+        sx={{
+          background: "white",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+        onClick={cardRA}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="rickPhoto.png" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Ricardo </Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
+        </CardContent>
+      </Card>
+
+      <Card
+        sx={{
+          background: "white",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+        onClick={cardFA}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="aviñaPhoto.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Fernando Aviña</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
+        </CardContent>
+      </Card>
+
+      <Card
+        sx={{
+          background: "white",
           width: 300,
           margin: "0.5rem",
           borderRadius: "20px",
@@ -281,79 +378,146 @@ export default function RecipeReviewCard() {
       >
         <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
           <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
-          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
-          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
-        </CardContent>
-      </Card>
-
-
-      <Card
-        sx={{
-          background: "linear-gradient(90deg,white, grey, white)",
-          width: 300,
-          margin: "0.5rem",
-          borderRadius: "20px",
-          boxShadow: 3,
-        }}
-      >
-        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
-          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
-          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
-        </CardContent>
-      </Card>
-
-      <Card
-        sx={{
-          background: "linear-gradient(90deg,white, grey, white)",
-          width: 300,
-          margin: "0.5rem",
-          borderRadius: "20px",
-          boxShadow: 3,
-        }}
-      >
-        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
-          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
-          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
-        </CardContent>
-      </Card>
-
-      <Card
-        sx={{
-          background: "linear-gradient(90deg,white, grey, white)",
-          width: 300,
-          margin: "0.5rem",
-          borderRadius: "20px",
-          boxShadow: 3,
-        }}
-      >
-        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
-          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Diego Arellano</Typography>
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Alberto</Typography>
           <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
         </CardContent>
       </Card>
     </div>
 
       {/*Seccion del backEnd */}
-      <Card sx={{width: '20%',height: '20rem', margin: '20px'}}>
-        <CardContent>
-          <Typography>Desarrolladores Back-End</Typography>
+      <div
+      style={{
+        display: "grid", 
+        gridTemplateColumns: "repeat(2, 1fr)",
+        background: 'white',
+        borderRadius: '20px',
+        width: '40%',
+        gap: "1rem", 
+        margin: '1.5rem',
+        padding: '15px',
+        justifyContent: "center", 
+        alignItems: "center",     
+        justifyItems: "center",
+      }}>
 
-          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
-          <Typography>Ricardo Anguiano</Typography>
-          <GitHubIcon></GitHubIcon>
-
-          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
-          <Typography>Alberto</Typography>
-          <GitHubIcon></GitHubIcon>
-
-          <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
-          <Typography>Fernando Aviña</Typography>
-          <GitHubIcon></GitHubIcon>
+      <Card
+        sx={{
+          background: "white",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+        onClick={cardRA}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="rickPhoto.png" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Ricardo </Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
         </CardContent>
       </Card>
+
+      <Card
+        sx={{
+          background: "white",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+        onClick={cardFA}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="aviñaPhoto.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Fernando Aviña</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
+        </CardContent>
+      </Card>
+
+      <Card
+        sx={{
+          background: "white",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="gojo pfp.jpg" alt="Pfp" />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Alberto</Typography>
+          <GitHubIcon sx={{ fontSize: "50px", marginTop: 2 }} />
+        </CardContent>
+      </Card>
+    </div>
+
+
+    {/*Diseñadora Grafica*/}
+    <div style={{
+        display: "grid", 
+        gridTemplateColumns: "repeat(1, 1fr)",
+        background: 'white',
+        borderRadius: '20px',
+        width: '40%',
+        gap: "1rem", 
+        padding: '15px',
+        justifyContent: "center", 
+        alignItems: "center",     
+        justifyItems: "center",
+      }}>
+        <Card
+        sx={{
+          background: "white",
+          width: 300,
+          margin: "0.5rem",
+          borderRadius: "20px",
+          boxShadow: 3,
+          cursor: "pointer",
+          transition: "all 0.3s ease-in-out",
+          ":hover": {
+            transform: "scale(1.1)",
+          },
+          ":active": {
+            transform: "scale(0.9)",
+            transition: "transform 0.1s ease-in-out",
+          },
+        }}
+      >
+        <CardContent sx={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+          <CardMedia sx={{ width: "15rem", height: "15rem", borderRadius: "100%" }} component="img" image="alanisPhot.png" alt="Pfp" />
+          <DesignServicesIcon />
+          <Typography sx={{ textAlign: "center", marginTop: 2 }}>Alanis</Typography>
+          
+        </CardContent>
+      </Card>
+    </div>
       </Box>
     </Box>
     </>
