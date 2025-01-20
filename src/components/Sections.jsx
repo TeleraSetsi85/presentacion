@@ -179,9 +179,6 @@ export default function RecipeReviewCard() {
                     Transmite confianza y elegancia con una invitación que refleja tu amor y atención al detalle. Déjanos ayudarte a dar el primer
                     paso para hacer de tu boda una experiencia inolvidable, ¡desde la primera impresión! 🌟
                   </Typography>
-                  <Typography variant="body2" sx={{ mt: 2, fontWeight: "bold" }}>
-                    ¿Listo para compartir tu gran día de manera inolvidable? ❤️
-                  </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
@@ -259,7 +256,7 @@ export default function RecipeReviewCard() {
     </Box>
 
       {/*Seccion de equipo */}
-    <Box sx={{background: 'brown', width: '80%', height: '90rem',padding: '10px 15px', borderRadius: '10px'}}>
+    <Box sx={{background: '#000d', width: '80%', height: '90rem',padding: '10px 15px', borderRadius: '10px'}}>
       <Typography variant="h2">
           Nuestro equipo
       </Typography>
