@@ -264,21 +264,41 @@ export default function RecipeReviewCard() {
           Nuestro equipo
       </Typography>
       
-      <Box sx={{display: 'flex', justifyContent: 'end', alignItems: 'center'}}>
+      <Box sx={{
+          display: 'flex',
+          justifyContent: 'end',
+          alignItems: 'center'
+          }}>
 
       <div
       style={{
+        display: "grid",
+        gridTemplateColumns: "repeat(2, 1fr)",
+        gridTemplateRows: "auto auto auto",
+        gridTemplateAreas: `
+          "title title"
+          "card1 card2"
+          ". card3"
+        `,
         display: "grid", 
         gridTemplateColumns: "repeat(2, 1fr)",
+        justifyContent: "center", 
+        alignItems: "center",     
+        justifyItems: "center",
         background: 'white',
         borderRadius: '20px',
         width: '40%',
         gap: "1rem", 
         padding: '15px',
-        justifyContent: "center", 
-        alignItems: "center",     
-        justifyItems: "center",
       }}>
+        <Typography sx={{
+            textAlign: "center",
+            fontWeight: "bold",
+            marginBottom: "10px",
+            gridArea: "title",
+          }} variant="h6">
+            Desarrolladores Front-End
+          </Typography>
       <Card
         sx={{
           background: "white",
@@ -387,21 +407,35 @@ export default function RecipeReviewCard() {
       {/*Seccion del backEnd */}
       <div
       style={{
-        display: "grid", 
+        display: "grid",
         gridTemplateColumns: "repeat(2, 1fr)",
-        background: 'white',
-        borderRadius: '20px',
-        width: '40%',
-        gap: "1rem", 
-        margin: '1.5rem',
-        padding: '15px',
-        justifyContent: "center", 
-        alignItems: "center",     
+        gridTemplateRows: "auto auto auto",
+        gridTemplateAreas: `
+          "title title"
+          "card1 card2"
+          ". card3"
+        `,
+        background: "white",
+        borderRadius: "20px",
+        width: "40%",
+        gap: "1rem",
+        margin: "1.5rem",
+        padding: "15px",
+        justifyContent: "center",
+        alignItems: "center",
         justifyItems: "center",
       }}>
-
+          <Typography sx={{
+            textAlign: "center",
+            fontWeight: "bold",
+            marginBottom: "10px",
+            gridArea: "title",
+          }} variant="h6">
+            Desarrolladores Back-End
+          </Typography>
       <Card
         sx={{
+          gridArea: "card1",
           background: "white",
           width: 300,
           margin: "0.5rem",
@@ -428,6 +462,7 @@ export default function RecipeReviewCard() {
 
       <Card
         sx={{
+          gridArea: "card2",
           background: "white",
           width: 300,
           margin: "0.5rem",
@@ -454,6 +489,9 @@ export default function RecipeReviewCard() {
 
       <Card
         sx={{
+          gridArea: "card3",
+          position: 'relative',
+          right: '10rem',
           background: "white",
           width: 300,
           margin: "0.5rem",
@@ -492,6 +530,9 @@ export default function RecipeReviewCard() {
         alignItems: "center",     
         justifyItems: "center",
       }}>
+        <Typography sx={{ textAlign: "center", fontWeight: "bold", marginBottom: "10px", marginTop: "20px" }} variant="h6">
+          Diseñadora Gráfica
+        </Typography>
         <Card
         sx={{
           background: "white",
