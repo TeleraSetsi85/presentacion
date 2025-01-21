@@ -32,10 +32,15 @@ function NavBar() {
       <Container
         id="navBar"
         maxWidth="xl"
-        sx={{ width: { xs: "100%", md: "60%" }, backgroundColor: "#28282B", borderRadius: { xs: 0, md: "8px" }, boxShadow: "var(--Paper-shadow)" }}
+        sx={{ width: { xs: "100%", md: "60%" }, backgroundColor: "transparent", borderRadius: { xs: 0, md: "8px" }, boxShadow: "var(--Paper-shadow)" }}
       >
         <Toolbar disableGutters>
-          <Typography variant="h6" noWrap sx={{ color: "inherit", textDecoration: "none" }}>
+          <Typography variant="h6" noWrap sx={{ color: "#003563", fontWeight:"900", textDecoration: "none", fontSize:{
+            xs: '16px',
+            sm: '20px',
+            md: '22px',
+            lg: '28px',
+          }}}>
             EquipoDev
           </Typography>
 
@@ -51,6 +56,11 @@ function NavBar() {
               transformOrigin={{ vertical: "top", horizontal: "left" }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
+              sx={{
+                '& .MuiPaper-root':{
+                  backgroundColor:'#aad7ffbf'
+                }
+              }}
             >
               {pages.map((page) => (
                 <MenuItem
@@ -60,7 +70,7 @@ function NavBar() {
                     handleButton(page);
                   }}
                 >
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                  <Typography sx={{ textAlign: "center", color:"#003563", fontWeight: "400"}}>{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -69,7 +79,7 @@ function NavBar() {
           {/* Desktop Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: "end" }}>
             {pages.map((page) => (
-              <Button key={page} onClick={() => handleButton(page)} sx={{ my: 2, color: "white" }}>
+              <Button key={page} onClick={() => handleButton(page)} sx={{ my: 2, color: "#003563" }}>
                 {page}
               </Button>
             ))}

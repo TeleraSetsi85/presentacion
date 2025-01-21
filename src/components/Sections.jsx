@@ -64,17 +64,36 @@ export default function RecipeReviewCard() {
   const cardAL = ()=>{
     window.location.href = '';
   }
+
+  const cardStyles = {
+    background: "linear-gradient(45deg,rgb(70, 100, 252),rgb(172, 185, 193), rgb(71, 129, 195))",
+    width: {
+      xs: '90%',    
+      sm: '45%',    
+      md: '30%'     
+    },
+    height: {
+      xs: 'auto',   
+      sm: '22rem',  
+      md: '20rem'
+    },
+    margin: { 
+      xs: '10px',   
+      sm: '15px',
+      md: '20px'
+    }
+  };
   return (
     <>
-    <Card sx={{ width: "80%", backgroundColor: "#28282B", color: "white" }}>
+    <Card sx={{ width: "80%", backgroundColor: "#13133dea", color: "white" }}>
       <CardContent>
         <Typography
           variant="h2"
           sx={{
-            color: "#5c1b6c",
+            color: "#8e1ba8",
             fontWeight: "bold",
             webkitTextStroke: "1px black",
-            textShadow: "1px 1px 1px #5c1b6c",
+            textShadow: "1px 1px 5px rgb(0, 0, 0)",
           }}
         >
           ¿Que hacemos?
@@ -210,14 +229,14 @@ export default function RecipeReviewCard() {
 
     {/*La seccion de caracteristicas */}
     <Box sx={{
-      display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: 2, padding: 2}}>
-      <Card sx={{background: "linear-gradient(45deg,rgb(134, 8, 252), #000b,rgb(22, 88, 255))", width: '30%',height: '20rem',  margin: '20px'}}>
+      display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", gap: {xs: 1, sm: 2}, padding:{xs: 1, sm: 2}}}>
+      <Card sx={cardStyles}>
         <CardContent>
         <CodeIcon sx={{color: "#1E90FF", fontSize: '50px'}}></CodeIcon>
           <Typography gutterBottom variant="h4" component="div" sx={{color: '#FFFFFF'}}>
             Desarrollo Front-End
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{color: '#FFFFFF'}}>
+          <Typography variant="body2" color="text.secondary" sx={{color: 'black'}}>
           El desarrollo Front-End se basa en los colores, funciones, modelo etc.
             Aborda la parte orientada al usuario de un sitio web.
             Estas tecnologías incluyen lenguajes informáticos como JavaScript, CSS, HTML, React.js y MaterialUI
@@ -226,13 +245,13 @@ export default function RecipeReviewCard() {
       </Card>
 
 
-      <Card sx={{background: "linear-gradient(45deg,rgb(134, 8, 252), #000b,rgb(22, 88, 255))", width: '30%',height: '20rem',  margin: '20px'}}>
+      <Card sx={cardStyles}>
       <CardContent>
         <DnsIcon sx={{color: "#1E90FF", fontSize: '50px'}}></DnsIcon>
           <Typography gutterBottom variant="h4" component="div" sx={{color: '#FFFFFF'}}>
             Desarrollo Back-End
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{color: '#FFFFFF'}}>
+          <Typography variant="body2" color="text.secondary" sx={{color: 'black'}}>
           El desarrollo Back-End se basa en lo que los usuarios no pueden ver, o sea, el servidor, mantienen las operaciones del lado del servidor de una aplicación o pagina web.
           Nuestros principales objetivos de desarrollo son crear una arquitectura fiable que realice las funciones de la aplicación de forma precisa y eficiente.
           </Typography>
@@ -240,13 +259,13 @@ export default function RecipeReviewCard() {
       </Card>
 
 
-      <Card sx={{background: "linear-gradient(45deg,rgb(134, 8, 252), #000b,rgb(22, 88, 255))", width: '30%',height: '20rem', margin: '20px'}}>
+      <Card sx={cardStyles}>
       <CardContent>
         <DesignServicesIcon sx={{color: "#1E90FF", fontSize: '50px'}}></DesignServicesIcon>
           <Typography gutterBottom variant="h4" component="div" sx={{color: '#FFFFFF'}}>
             Diseño Grafico
           </Typography>
-          <Typography variant="body2" color="text.secondary" sx={{color: '#FFFFFF'}}>
+          <Typography variant="body2" color="text.secondary" sx={{color: 'black'}}>
           Contamos con conocimientos sobre Diseño Grafico, principalmente sobre UX y UI.
           Creamos para ustedes una interfaz de usuario intuitiva, diseñada para facilitar la interacción y maximizar la eficiencia, al igual que una experiencia atractiva
           y memorable que conecta a los usuarios con su propósito de manera sencilla y efectiva. Nos enfocamos en combinar funcionalidad, diseño moderno y accesibilidad para garantizar que cada detalle cumpla con las expectativas de nuestros clientes
@@ -257,7 +276,9 @@ export default function RecipeReviewCard() {
 
       {/*Seccion de equipo */}
     <Box sx={{background: '#000d', width: '80%', height: '70rem',padding: '10px 15px', borderRadius: '10px', marginBottom: '100px'}}>
-      <Typography variant="h2">
+      <Typography variant="h2" sx={{
+        color: 'aliceblue'
+      }}>
           Nuestro equipo
       </Typography>
       
@@ -278,8 +299,6 @@ export default function RecipeReviewCard() {
           "card1 card2"
           ". card3"
         `,
-        display: "grid", 
-        gridTemplateColumns: "repeat(2, 1fr)",
         justifyContent: "center", 
         alignItems: "center",     
         justifyItems: "center",
