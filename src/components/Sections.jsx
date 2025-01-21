@@ -65,6 +65,15 @@ export default function RecipeReviewCard() {
     window.location.href = '';
   }
 
+
+  //Funciones de las card de trabajos
+  const btnCardWed = ()=>{
+    window.location.href = 'https://brenda-valentin-boda.netlify.app/';
+  }
+
+  const btnCardLex = ()=>{
+    window.location.href = '';
+  }
   const cardStyles = {
     background: "linear-gradient(45deg,rgb(70, 100, 252),rgb(172, 185, 193), rgb(71, 129, 195))",
     width: {
@@ -146,20 +155,28 @@ export default function RecipeReviewCard() {
           >
             <Card sx={{ minWidth: { xs: "100%", md: "calc(50% - 1rem)" }, backgroundColor: "gainsboro"}}>
               <CardActionArea>
-                <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+                <CardMedia component="img" height="200" image="lexo.jpg" alt="green iguana" onClick={btnCardLex} />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Lexo Salmon
                   </Typography>
                   <Typography variant="p" sx={{ color: "text.secondary" }}>
-                    En equipoDev, nos enorgullece haber desarrollado una solución web integral para facilitar la compra de cursos y conferencias de
-                    manera sencilla y segura. Nuestro objetivo fue crear una plataforma que no solo haga más fácil acceder al conocimiento, sino
-                    también proporcionar una experiencia de usuario sin complicaciones. Los clientes pueden explorar una amplia gama de cursos y
-                    conferencias, realizar su pago de manera segura a través de herramientas confiables como la API de PayPal, y recibir su boleto
-                    digital inmediatamente después de la transacción. Con un enfoque en la seguridad y la eficiencia, nos aseguramos de que cada paso
-                    en el proceso sea claro y transparente, brindando confianza tanto en el pago como en el acceso a los eventos. Con nosotros, los
-                    clientes pueden disfrutar de una experiencia digital fluida y sin preocupaciones, sabiendo que cada detalle ha sido pensado para
-                    su comodidad y satisfacción.
+                  En equipoDev, nos enorgullece haber desarrollado una solución web integral para facilitar la compra de cursos y conferencias de manera sencilla y segura.
+                  Nuestro objetivo fue crear una plataforma que no solo haga más fácil acceder al conocimiento 🧠, sino también proporcionar una experiencia de usuario sin complicaciones ✅.
+                  <Typography>
+                    Los clientes pueden:
+                  </Typography>
+                  <Typography variant="subtitle1" gutterBottom>
+                    👉 <strong>Explorar:</strong> Una <strong>amplia gama</strong> de <strong>cursos</strong> y <strong>conferencias</strong> 🎓
+                  </Typography>
+                  <Typography variant="subtitle1" gutterBottom>
+                    👉 <strong>Pago Seguro:</strong> Realiza tu <strong>pago</strong> a través de herramientas confiables como la <strong>API de PayPal</strong> 💳
+                  </Typography>
+                  <Typography variant="subtitle1" gutterBottom>
+                    👉 <strong>Recepción Inmediata:</strong> Recibe tu <strong>boleto digital</strong> 🎟️ de manera inmediata 
+                  </Typography>
+                    Con un enfoque en la seguridad y la eficiencia, nos aseguramos de que cada paso en el proceso sea claro y transparente , brindando confianza tanto en el pago como en el acceso a los eventos 🎯.
+                    Con nosotros, los clientes pueden disfrutar de una experiencia digital fluida y sin preocupaciones, sabiendo que cada detalle ha sido pensado para su comodidad y satisfacción.
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -172,7 +189,7 @@ export default function RecipeReviewCard() {
               }}
             >
               <CardActionArea>
-                <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+                <CardMedia component="img" height="200" image="boda.png" alt="green iguana" onClick={btnCardWed} />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Boda
@@ -182,14 +199,14 @@ export default function RecipeReviewCard() {
                     moderno y sofisticado, hemos combinado lo mejor de la tecnología y la creatividad para reflejar la esencia de tu boda:
                   </Typography>
                   <Box component="ul" sx={{ pl: 2, mt: 2 }}>
-                    <Typography component="li" variant="body2" color="text.secondary">
+                    <Typography variant="subtitle1" gutterBottom>
                       ✨ <strong>Animaciones cautivadoras:</strong> Diseñadas cuidadosamente con CSS para agregar movimiento y magia a tu invitación.
                     </Typography>
-                    <Typography component="li" variant="body2" color="text.secondary">
+                    <Typography variant="subtitle1" gutterBottom>
                       🎵 <strong>Música personalizada:</strong> Una melodía que resuena con la emoción del momento, disponible directamente en la
                       invitación.
                     </Typography>
-                    <Typography component="li" variant="body2" color="text.secondary">
+                    <Typography variant="subtitle1" gutterBottom>
                       📱 <strong>Diseño adaptable:</strong> Desarrollado con el poderoso framework Bootstrap, garantizando que se vea increíble en
                       cualquier dispositivo, ya sea un móvil, tableta o computadora.
                     </Typography>
@@ -202,7 +219,7 @@ export default function RecipeReviewCard() {
               </CardActionArea>
             </Card>
 
-            <Card sx={{ minWidth: { xs: "100%", md: "calc(50% - 1rem)" }, backgroundColor: "gainsboro" }}>
+            {/* <Card sx={{ minWidth: { xs: "100%", md: "calc(50% - 1rem)" }, backgroundColor: "gainsboro" }}>
               <CardActionArea>
                 <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
                 <CardContent>
@@ -221,7 +238,7 @@ export default function RecipeReviewCard() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-            </Card>
+            </Card> */}
           </Box>
         </CardContent>
       </Collapse>
@@ -237,7 +254,7 @@ export default function RecipeReviewCard() {
             Desarrollo Front-End
           </Typography>
           <Typography variant="body2" color="text.secondary" sx={{color: 'black'}}>
-          El desarrollo Front-End se basa en los colores, funciones, modelo etc.
+            El desarrollo Front-End se basa en los colores, funciones, modelo etc.
             Aborda la parte orientada al usuario de un sitio web.
             Estas tecnologías incluyen lenguajes informáticos como JavaScript, CSS, HTML, React.js y MaterialUI
           </Typography>
