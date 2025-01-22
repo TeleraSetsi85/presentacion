@@ -142,7 +142,7 @@ function Nosotros() {
               }}
             >
               <CardActionArea>
-                <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+                <CardMedia component="img" height="200" image="lexo.jpg" alt="green iguana" />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Lexo Salmon
@@ -164,7 +164,7 @@ function Nosotros() {
               }}
             >
               <CardActionArea>
-                <CardMedia component="img" height="200" image="contemplative-reptile.jpg" alt="green iguana" />
+                <CardMedia component="img" height="200" image="boda.png" alt="green iguana" />
                 <CardContent>
                   <Typography gutterBottom variant="h5" component="div">
                     Boda
@@ -176,7 +176,7 @@ function Nosotros() {
               </CardActionArea>
             </Card>
 
-            <Card
+            {/* <Card
               sx={{
                 flex: "1 1 100%",
                 maxWidth: { md: "calc(50% - 1rem)", xs: "100%" },
@@ -196,7 +196,7 @@ function Nosotros() {
                   </Typography>
                 </CardContent>
               </CardActionArea>
-            </Card>
+            </Card> */}
           </Box>
         </CardContent>
       </Collapse>

@@ -15,7 +15,7 @@ const members = {
     action: () => (window.location.href = "https://github.com/TeleraSetsi85"),
   },
   ricardo: {
-    name: "Ricardo",
+    name: "Ricardo Anguiano",
     socialIcon: <GitHubIcon sx={{ fontSize: 40, mt: 2, color: "#7B1FA2" }} />,
     image: "rickPhoto.png",
     action: () => (window.location.href = "https://github.com/RAH-013"),
@@ -27,16 +27,16 @@ const members = {
     action: () => (window.location.href = "https://github.com/Fer10K"),
   },
   alberto: {
-    name: "Alberto",
+    name: "Alberto Vazquez",
     socialIcon: <GitHubIcon sx={{ fontSize: 40, mt: 2, color: "#7B1FA2" }} />,
-    image: "gojo-pfp.jpg",
-    action: () => (window.location.href = "#"),
+    image: "albertoPhoto.jpg",
+    action: () => (window.location.href = "https://github.com/Bb3t0-V4zf1g"),
   },
   alanis: {
-    name: "Alanis",
+    name: "Alanis de casso",
     socialIcon: <InstagramIcon sx={{ fontSize: 40, mt: 2, color: "#7B1FA2" }} />,
     image: "alanisPhoto.png",
-    action: () => (window.location.href = "#"),
+    action: () => (window.location.href = "https://www.instagram.com/alanis.gc?igsh=MW0xdWI1YWhlbWdtMQ=="),
   },
 };
 

@@ -127,13 +127,13 @@ function NavBar() {
               Contactame:
             </Typography>
             <Typography variant="body1" sx={{ mb: 1 }}>
-              <strong>Nombre:</strong> Jonh Doe
+              <strong>Nombre:</strong> Diego Arellano
             </Typography>
             <Typography variant="body1" sx={{ mb: 1 }}>
-              <strong>Correo:</strong> email@email.com
+              <strong>Correo:</strong> dialfonso@gmail.com
             </Typography>
             <Typography variant="body1" sx={{ mb: 2 }}>
-              <strong>Número:</strong> 122355245
+              <strong>Número:</strong> 3121931445
             </Typography>
             <Button variant="contained" color="primary" onClick={handleCloseModal} fullWidth>
               Aceptar
